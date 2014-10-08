@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #D5D5D5;
+}
+
+div.slide h1 {
+  font-weight: bold;
+  background-color: #454545;
+  color: #fff;
+  padding: 0.5em 1em;
+
+  -webkit-box-shadow:   0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:      0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+  box-shadow:           0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+
+  /* hmm doesnt work */
+  background-repeat: no-repeat
+  background-position: center right 
+  background-image: url(images/HaskellLogoSmall.png) 
+}
+
+img {
+  max-width: 350px;
+  max-height: 200px;
+}
+
+div.slide h1, div.slide.titlepage h1 {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+h1 code {
+  color: #cbe3ff;
+  font-weight: bold;
+}
+
+code {
+  font-family: "Consolas", "Courier New", monospace;
+
+  font-weight: normal;
+  color: #00428C;
+}
+
+li p {
+  margin-left: 0;
+}
+
+div.slide > p:first-child,
+div.slide h1:empty + p {
+  margin-top: 5em;
+  text-align: center;
+  color: #009091;
+  font-size: 150%;
+}
+
+h1 + pre.sourceCode {
+  margin-top: 3em;
+}
+
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre
+   { margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
+td.lineNumbers { border-right: 1px solid #AAAAAA; text-align: right; color: #AAAAAA; padding-right: 5px; padding-left: 5px; }
+td.sourceCode { padding-left: 5px; }
+
+pre {
+  background: #252525;
+
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius:    5px;
+  -moz-border-radius:       5px;
+  -ms-border-radius:        5px;
+  -o-border-radius:         5px;
+  border-radius:            5px;
+
+
+  -webkit-box-shadow:   0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:      0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+  box-shadow:           0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+
+  padding: 0.5em 1.5em 0.7em 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: #0d0d0d 0px 1px 0px;
+}
+
+
+code.sourceCode { color: #d0d0d0; }
+code.sourceCode span.kw { color: #2ba6cb; font-weight: bold; }
+code.sourceCode span.dt { color: rgb(35,216,158); }
+code.sourceCode span.dv { color: #e5786d; }
+code.sourceCode span.bn { color: #40a070; }
+code.sourceCode span.fl { color: #e5786d; }
+code.sourceCode span.ch { color: #4070a0; }
+code.sourceCode span.st { color: #e5786d; }
+code.sourceCode span.co { color: #99968b; font-style: italic; }
+/*code.sourceCode span.ot { color: #007020; }*/
+code.sourceCode span.al { color: red; font-weight: bold; }
+code.sourceCode span.fu { color: #2ba6cb; }
+code.sourceCode span.re { }
+code.sourceCode span.er { color: red; font-weight: bold; }
+
+
+.highlight  {
+    color: #d0d0d0;
+
+    .hll { background-color: #ffffcc }
+    .k, .nt { color: #2ba6cb } /* Keyword, Name.Tag */
+    .c, .cm, .c1, .cs { color: #99968b; font-style: italic} /* Comment */
+    .cp { color: #e5786d} /* Comment.Preproc */
+    .m { color: #e5786d} /* Literal.Number */
+    .no { color: #e5786d} /* Name.Constant */
+    /*.mf, .mh, .mi, .mo { color: #e5786d} [> Literal.Number <] */
+    .il { color: #e5786d} /* Literal.Number.Integer.Long */
+    .na { color: #cae682} /* Name.Attribute */
+    .kt { color: rgb(35,216,158) } /* Keyword.Type */
+    .nf { color: #cae682} /* Name.Function */
+    .nv { color: #cae682} /* Name.Variable */
+    .vc { color: #cae682} /* Name.Variable.Class */
+    .vg { color: #cae682} /* Name.Variable.Global */
+    .vi { color: #cae682} /* Name.Variable.Instance */
+
+    .gh, .gu { font-weight: bold} /* Generic.Heading, Generic.Subheading */
+    .go { color: #808080; background-color: #303030 } /* Generic.Output */
+    .s { color: $tertiaryColor; font-style: italic} /* Literal.String */
+    .ni { color: #e7f6da} /* Name.Entity */
+}
+
+
+.panel {
+    color: lighten($txtColor, 15%);
+    background: $panelBackgroundColor;
+    @include small-border-radius;
+    @include single-box-shadow(rgba(0, 0, 0, 0.8), 0px, 1px, 4px, 0px);
+    //overflow: hidden;
+    //overflow-x: hidden;
+}
