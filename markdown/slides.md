@@ -249,10 +249,16 @@ CONFIG_OPROFILE=y
 CONFIG_HAVE_OPROFILE=y
 ~~~~
 
-* Compile
+* Force Kernel compilation using the new configuration
 
 ~~~~{.bash}
-build $: bitbake linux-imx
+build $: bitbake -c compile -f linux-imx
+~~~~
+
+* Deploy (this task will place the new `uImage` into `tmp/deploy/images/<MACHINE>` folder
+
+~~~~{.bash}
+build $: bitbake -c deploy linux-imx
 ~~~~
 
 * Connect the SD to the PC and copy the new image
