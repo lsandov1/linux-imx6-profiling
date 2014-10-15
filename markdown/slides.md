@@ -334,6 +334,6 @@ OProfile a custom application create a report
 To stress the system, running `n` times with
 
 ~~~~{.bash}
-APP=./helloworld
+APP=<FILE PATH TO YOUR BINARY>
 for i in `seq 1 100`; $APP; done
 ~~~~
